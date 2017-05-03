@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -12,25 +13,32 @@
 <header class="container-fluid">
 	<nav class="nav-top">
 	<img class="logo" src="assets/svg/logo.svg">
-	<div class="top-nav-menu top-nav ">
-		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">News</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Contact</a></li>
-	
-		</ul>
+	<div class="responsive-nav">
+		<div class="top-nav-menu top-nav ">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+		
+			</ul>
+		</div>
+		<div class="top-nav-menu top-nav-social">
+			<ul>
+				<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
 	</div>
-	<div class="top-nav-menu top-nav-social">
-		<ul>
-			<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-			<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-			<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-			<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-		</ul>
+	<div class="burger">
+		<img src="assets/svg/burger.svg" alt="">
 	</div>
 	</nav>
 </header>
+
+<!-- slider -->
 <div class="slider container-fluid" >
 	<div class="slider-img">
 		<img src="assets/img/banner.jpg">
@@ -54,51 +62,54 @@
 <div class="container-fluid video-section">
 	<div class="container clearfix">
 		<h2>Videos | <span>view all videos</span></h2>
-		<div class="video-box left">
-			<div class="video-box-text">EMBEDED YOUTUBE VIDEO GOES HERE</div>
-		</div>
-		<div class="video-box right">
-			<div class="video-box-text">EMBEDED YOUTUBE VIDEO GOES HERE</div>
+		<div class="wrap">
+			<div class="video-box left">
+				<div class="video-box-text"><iframe  src="https://www.youtube.com/embed/ASyL2OawRYQ" frameborder="0" allowfullscreen></iframe></div>
+			</div>
+			<div class="video-box right">
+				<iframe  src="https://www.youtube.com/embed/ASyL2OawRYQ" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 	</div>
-	
 </div>
 <div class="container-fluid media">
 	<div class="news-media container clearfix">
 		<h2>News | <span>view all ews media</span></h2>
-		<div class="media-box left">
-			<img src="assets/img/coding.jpg">
-			<h3>Typography lab</h3>
-		</div>
-		<div class="media-box left">
-			<img src="assets/img/social_media.jpg">
-			<h3>Typography lab</h3>
-		</div>
-		<div class="media-box left">		
-			<img src="assets/img/online_marketing.jpg">
-			<h3>Typography lab</h3>
-		</div>
-		<div class="media-box left">
-			<img src="assets/img/design.jpg">
-			<h3>Typography lab</h3>
-		</div>
-
+		<div class="wrap">
+			<div class="media-box left">
+				<img src="assets/img/coding.jpg">
+				<h3>Typography lab</h3>
+			</div>
+			<div class="media-box left">
+				<img src="assets/img/social_media.jpg">
+				<h3>Typography lab</h3>
+			</div>
+			<div class="media-box left">		
+				<img src="assets/img/online_marketing.jpg">
+				<h3>Typography lab</h3>
+			</div>
+			<div class="media-box left">
+				<img src="assets/img/design.jpg">
+				<h3>Typography lab</h3>
+			</div>
+		</div>	
 	</div>
 </div>
 
 <div class="container-fluid media featured">
 	<div class="featured-media container clearfix">
 		<h2>Featured | <span>view all featured media</span></h2>
-		<div class="featured-media-box">
-			<h3>responsive web design</h3>
-			<img src="assets/svg/media.svg">
-			<div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque dicta quia eaque quidem molestiae enim laborum illum commodi</div>
-		</div><div class="featured-media-box">
-			<h3>responsive web design</h3>
-			<img src="assets/svg/media.svg">
-			<div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque dicta quia eaque quidem molestiae enim laborum illum commodi</div>
+		<div class="wrap">
+			<div class="featured-media-box">
+				<h3>responsive web design</h3>
+				<img src="assets/svg/media.svg">
+				<div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque dicta quia eaque quidem molestiae enim laborum illum commodi</div>
+			</div><div class="featured-media-box">
+				<h3>responsive web design</h3>
+				<img src="assets/svg/media.svg">
+				<div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque dicta quia eaque quidem molestiae enim laborum illum commodi</div>
+			</div>
 		</div>
-
 
 	</div>
 </div>
@@ -112,5 +123,14 @@
 		</div>
 	</div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	
+	$('.burger').on('click',function(){
+		$('.responsive-nav').slideToggle();
+	});
+</script>
 </body>
 </html>
