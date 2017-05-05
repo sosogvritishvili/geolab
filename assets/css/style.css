@@ -593,7 +593,6 @@ font-size:14px;
 
 .date,.news-page-title{
 	margin-left:15px;
-	
 }
 }
 
@@ -601,3 +600,109 @@ font-size:14px;
 	
 	background: lime;
 }*/
+
+
+/*about page*/
+.about {
+	background: #EE4036;
+	
+}
+
+.about-us{
+	margin-top:110px;
+	margin-bottom:40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	 align-items: baseline;
+}
+
+.about-us .about-box{
+	padding:50px;
+	border:1px solid #EE4036;
+}
+
+.about-us .about-us-b:nth-of-type(2) .about-box{
+	padding:100px 50px;
+	
+}
+
+.about-us .about-us-b:nth-of-type(2) .about-box img{
+	width:260px;
+	height:183px;
+}
+
+.about-box img{
+	width:193px;
+	height:193px;
+}
+
+.about-us-b{
+	color:#EE4036;
+}
+.about-us-b h2{
+	font-size:22px;
+	text-transform: uppercase;
+	margin:10px 0;
+}
+
+.about-us-b h3{
+	font-size:18px;
+	text-transform: lowercase;
+	margin:10px 0;
+}
+
+.team{
+	border-top:1px solid #EE4036;
+	padding-top:90px;
+	padding-bottom:90px;
+
+}
+
+.team-box{
+	position: relative;
+		min-width:200px;
+		padding:20px 0;
+}
+
+.team-about{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	 /*align-items: baseline;*/
+
+}
+
+.team-box img{
+	width:110px;
+	height:170px;
+}
+
+
+
+.team-box h2{
+	top:90px;
+	left:20px;
+	position: absolute;
+	font-size: 22px;
+	text-transform: uppercase;
+	color:black;
+
+	display: inline-block;
+}
+
+@media (max-width: 1024px){
+.about-us .about-box{
+	padding:100px;
+}
+
+.about-us .about-us-b:nth-of-type(2) .about-box{
+	padding:100px;
+}
+
+.about-us .about-us-b:nth-of-type(2) .about-box img{
+	width:193px;
+	height:153px;
+}
+
+}
