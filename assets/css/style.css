@@ -1,4 +1,6 @@
-body  { 
+a{color:red!important;
+	}
+	body  { 
 	font-family: 'Roboto', sans-serif;
 	color:#fff;
 	 }
@@ -86,6 +88,8 @@ line-height: 100px;
 	padding-right: 15px;
 	font-size:24px;
 }
+
+
 
 .top-nav-menu.top-nav ul li a:hover ,.top-nav-menu.top-nav-social ul li a:hover {
 	opacity:0.5;
@@ -706,3 +710,4 @@ font-size:14px;
 }
 
 }
+
